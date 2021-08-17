@@ -1,4 +1,4 @@
-import sys
+import sys                                   실패!!!!!!!!!!! 시간초과!!!!!!!
 def check(words):
     if words==words[::-1]:
         return True
