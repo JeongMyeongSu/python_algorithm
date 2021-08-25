@@ -1,2 +1,3 @@
-a=input()
-print(a[:0])
+a={1:3,2:4}
+del a[1]
+print(a)
