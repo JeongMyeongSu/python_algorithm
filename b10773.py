@@ -1,6 +1,5 @@
-from collections import deque
 T = int(input())
-stack=deque()
+stack=[]
 for _ in range(T):
     N = int(input())
     if N == 0:
