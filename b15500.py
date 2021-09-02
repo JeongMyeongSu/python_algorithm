@@ -11,7 +11,7 @@ def hanoi(n):
         return
     else:
         if stack1:
-            while 1: 
+            while stack1: 
                 if stack1[-1] == n:
                     stack3.append(stack1.pop())
                     change.append([1,3])

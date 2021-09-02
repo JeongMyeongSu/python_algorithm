@@ -4,7 +4,7 @@ stack2=[]
 stack3=[]
 change = []
 while n>0:
-    while stack1: 
+    while n in stack1: 
         if stack1[-1] == n:
             stack3.append(stack1.pop())
             change.append([1,3])
@@ -13,7 +13,7 @@ while n>0:
             stack2.append(stack1.pop())
             change.append([1,2])
     
-    while stack2: 
+    while n in stack2: 
         if stack2[-1] == n:
             stack3.append(stack2.pop())
             change.append([2,3])
