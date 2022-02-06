@@ -27,6 +27,23 @@
 # print(cnt)
 # for l in log:
 #     print(l)
-a=1
-b=32225
-print(b&a)
+def lining8(n,A):
+    global cnt
+    if n==8:
+        cnt += 1
+        return
+    for i in range(1,9):
+        if not A:
+            lining8(n+1,[i])
+        if A and adj[A[-1]][i] and i not in A :
+            lining8(n+1,A+[i])
+adj = [[1]*9 for _ in range(9)]
+N = int(input())
+cnt = 0
+for _ in range(N):
+    a,b = map(int,input().split())
+    adj[a][b]=0
+    adj[b][a]=0
+lining8(0,[])
+print(cnt)
+
